@@ -11,7 +11,8 @@ Usage:
 -pk     [required] Range start from
 -pke    [required] End range
 -maxm   [required] Number of operations before give up the search (maxm*expected operation)
-        Note: maxm should be not less than 2
+        Note: maxm should be not less than 2 due to expected operation in kangaroo
+        is probalistic value and can be 2 or 3 times more than expected.
 -dp     [required] number of leading zeros for the DP method
 -t      [kangaroo settings]
 -g      [kangaroo settings]
