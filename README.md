@@ -3,15 +3,16 @@ fractionkangaroo is based on fraction algorithm do the same things as fraction-b
 Requred kangaroo in the same folder (https://github.com/JeanLucPons/Kangaroo).  
 ```
 Usage:
--pos    Set number of pos in division cicle in hex format (ex. -pos FF)
--dbit   Set number of divisor 2^ (ex. -dbit 6 mean divisor = 2^6 = 64)
--wl     Set recovery file from which the state will be loaded
--wt     timer interval for saving work (in seconds)
--pb     set single uncompressed/compressed pubkey for searching
--pk     range start from
--pke    end range
--maxm   number of operations before give up the search (maxStep*expected operation)
--dp     number of leading zeros for the DP method
+-pos    [optional] Set number of pos in division cicle in hex format (ex. -pos FF)
+-dbit   [required] Set number of divisor 2^ (ex. -dbit 6 mean divisor = 2^6 = 64)
+-wl     [optional] Set recovery file from which the state will be loaded
+-wt     [optional] Timer interval for saving work (in seconds), default 180
+-pb     [required] Set single uncompressed/compressed pubkey for searching
+-pk     [required] Range start from
+-pke    [required] End range
+-maxm   [required] Number of operations before give up the search (maxm*expected operation)
+        Note: maxm should be not less than 2
+-dp     [required] number of leading zeros for the DP method
 -t      [kangaroo settings]
 -g      [kangaroo settings]
 -gpuid  [kangaroo settings]
